@@ -1,0 +1,63 @@
+﻿body {
+    margin: 0px;
+    background-color: ghostwhite;
+    color: #1d1d1f;
+    font-family: 'Century Gothic';
+}
+
+#name {
+    background-color: #1d1d1f;
+    color: ghostwhite;
+    text-align: center;
+    margin: 0;
+    font-stretch: condensed;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#division {
+    margin-bottom: 75px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#paragraph {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.abtme {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+#header {
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Education {
+    margin: 25px;
+}
+
+.ep {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#tertiary {
+    margin: 10px;
+}
+
+#copyright {
+    text-align: center;
+}

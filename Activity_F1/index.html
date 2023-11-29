@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
+    <title>Activity_F1</title>
+
+    <script>
+        function myFunction() {
+            var name = document.getElementById("name");
+            alert("Hi, " + name.value);
+
+            var email = document.getElementById("email");
+            alert("Your email is " + email.value);
+
+            var number = document.getElementById("number");
+            alert("Your number is " + number.value);
+
+            var subject = document.getElementById("subject");
+            alert("Your subject matter is regarding to " + subject.value + " right?");
+
+
+            if(document.getElementById("message").value) {
+                alert("Message submitted, we will look forward to that subject matter as soon as possible");
+            } else {
+                prompt("Please enter a message/comments: ");
+                    
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header class="navigation" id="home">
+        <nav>
+            <h2 class="logo"><span>CSIT201</span> Platform-based Development</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="greetings">
+        <h1>Hi! I am John Loi Carreon</h1>
+        <hr />
+        <p id="headers">About Me</p>
+    </div>
+
+    <div class="aboutMe" id="about">
+        <img src="avatar.jpg" alt="avatar" />
+        <p>
+            Thanks for your interest, here is a quick story of me and this website.<br /><br />
+
+            As a teenager, I started experimenting with HTML, the fundamental language of the web.
+            I devoured online tutorials and books, spending countless hours learning the art of coding.
+            It was a challenging journey, but I was determined to master it.<br /><br />
+
+            My first project was a basic personal website, a digital canvas to showcase my hobbies and
+            interests. It was a labor of love, with late nights and endless debugging. But when it was finally
+            live on the internet, I felt an immense sense of accomplishment. <br /><br />
+
+            With time, I started building websites for friends and local businesses.
+            They gained a reputation for delivering high-quality work and meeting deadlines.
+            Word of mouth began to spread, and soon, they had a thriving side business.<br /><br />
+
+            But I wanted more. I enrolled in online coding bootcamps and attended web development meetups to
+            learn from experienced professionals. Networking opened new doors, and they found a mentor who guided
+            me through the intricacies of web development.<br /><br />
+
+            And so, I embarked on the next chapter of their career, ready to face the challenges and opportunities
+            that the world of web development had in store. Their story was a testament to the power of passion and perseverance,
+            a reminder that anyone could achieve their dreams with dedication and a love for the digital world. <br /><br />
+
+            Cheers,<br />
+            <bold>John Loi D. Carreon</bold>
+        </p>
+    </div>
+
+    <p id="project_header">Projects</p>
+
+    <div class="projects" id="projects">
+        <ul class="proj_list">
+            <li>BMI Calculator</li>
+            <li>Calculator</li>
+            <li>Calendar</li>
+            <li>Chatbot</li>
+            <li>Contact Saver</li>
+            <li>Daily Quiz</li>
+            <li>Employee Record System</li>
+            <li>Face Detector</li>
+            <li>Motion Detector</li>
+            <li>Gwapo Detector</li>
+        </ul>
+        <img id="bulb" src="project.png" alt="picture of bulb" />
+    </div>
+
+    <div class="achievements" id="achievements">
+        <p id="headers">Achievements</p>
+
+        <div class="lists">
+            <ul class="ach123">
+                <li>Achievements 1</li>
+                <ul id="2ndlist">
+                    <li>December, 2020 - Present.</li>
+                    <li>Write technical articles on programming related topics.</li>
+                </ul>
+                <br />
+                <li>Achievements 2</li>
+                <ul id="2ndlist">
+                    <li>August, 2020 - Present.</li>
+                    <li>Conducted events and workshops on different technologies.</li>
+                </ul>
+                <br />
+                <li>Achievements 3</li>
+                <ul id="2ndlist">
+                    <li>Octoboer, 2020.</li>
+                    <li>Selected from Microsoft as Student ambassador where I mentored students in their projects.</li>
+                </ul>
+                <br />
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p id="header_contact">Contact</p>
+        <center><hr width="90" color="black" /></center>
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+
+            <label for="number">Number: </label>
+            <input type="text" id="number">
+
+            <label for="subject">Subject: </label>
+            <input type="text" id="subject">
+
+            <label for="message">Message: </label>
+            <textarea id="message"></textarea>
+
+            <p>Message: </p>
+            <button class="btn" onclick="myFunction()">Submit</button>
+        </form>
+    </div>
+
+    <div class="footNav">
+        <ul>
+            <li><a href="#Home">LinkedIn</a></li>
+            <li>|</li>
+            <li><a href="#Home">GitHub</a></li>
+            <li>|</li>
+            <li><a href="#Home">HackerRank</a></li>
+            <li>|</li>
+            <li><a href="#Home">Twitter</a></li>
+            <li>|</li>
+            <li><a href="#Home">Instagram</a></li>
+            <li>|</li>
+            <li><a href="#Home">Email</a></li>
+        </ul>
+    </div>
+
+    <footer> &copy;Copyright 2050 by JOHN LOI CARREON. All rights reserve</footer>
+
+</body>
+</html>

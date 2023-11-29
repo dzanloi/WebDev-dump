@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+.header {
+    font-size: 55px;
+}
+.order-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-form h2 {
+    margin: 15px;
+}
+
+.order-form label {
+    display: flex;
+}
+
+.order-form p {
+    margin-top: auto;
+    margin-bottom: auto;
+}

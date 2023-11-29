@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,700;1,500&family=Smooch+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form name="order">
+            <h1 class="header">Shopee Form</h1>
+            <hr>
+
+            <div class="order-form">
+                <h2>Order Form</h2>
+                <label><p>Date:</p> <input type="date" name="formdate"></label>
+            </div>
+
+            <fieldset class="product-form">
+                <legend>Select a product</legend>
+
+                <div class="order-form">
+                    <label>
+                        <p>Product </p>
+                        <select class="products">
+                            <option selected> Products from GPS-ware</option>
+                        </select>
+    
+                        <select class="qty">
+                            <option selected disabled>Quantity</option>
+                        </select>
+                    </label>
+                    <input type="text" placeholder="0.00" id="sub1">
+                </div>
+
+                <div class="order-form">
+                    <p>Tax 5%</p>
+                    <input type="text" name="sub2" id="sub2">
+                </div>
+
+                <div class="order-form">
+                    <p>Shipping:</p>
+                    <div class="shipping">
+                        <label><input type="radio" name="shipping"> Standard (3-5 days): $7.95</label>
+                        <label><input type="radio" name="shipping"> Express (2 days): $9.95</label>
+                        <label><input type="radio" name="shipping"> Next Day (1 day): $12.95</label>
+                    </div>
+                    <input type="text" placeholder="0.00" name="sub3" id="sub3">
+
+                </div>
+                <footer>
+                    <div class="blank"> </div>
+                    <label>TOTAL <input type="text" placeholder="0.00"></label>
+                </footer>
+            </fieldset>
+        </form>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

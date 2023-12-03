@@ -13,6 +13,9 @@ body {
     margin-right: 25%;
 }
 
+#labels {
+    color: #a21b00;
+}
 header h1{
     font-size: 70px;
 }
@@ -22,17 +25,24 @@ header span {
 }
 
 .product-form {
-    padding: 8px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .order-form {
+    padding-top: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
+.order-form input[type="date"] {
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .order-form h2 {
-    margin: 15px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .order-form label {
@@ -51,4 +61,12 @@ footer {
 footer label {
     color: red;
     font-weight: bold;
+}
+
+last {
+    display: flex;
+}
+
+.label{
+    margin-right: 35px;
 }

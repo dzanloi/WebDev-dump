@@ -2,16 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Smooch Sans', sans-serif;
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-.header {
-    font-size: 55px;
+header h1{
+    font-size: 70px;
 }
+header span {
+    font-size: 70px;
+    color: #EE4d2d;
+}
+
+.product-form {
+    padding: 8px;
+}
+
 .order-form {
     width: 100%;
     display: flex;
@@ -29,4 +42,13 @@ body {
 .order-form p {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+footer label {
+    color: red;
+    font-weight: bold;
 }

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,40 +11,71 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,700;1,500&family=Smooch+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
     </head>
+
+
+
+
+
+    <!-- BODY STARTS HERE -->
     <body>
         <form name="order">
-            <h1 class="header">Shopee Form</h1>
-            <hr>
+            <header>
+                <h1><span>Shopee</span> Form</h1>
+                <hr>
+            </header>
 
             <div class="order-form">
                 <h2>Order Form</h2>
                 <label><p>Date:</p> <input type="date" name="formdate"></label>
             </div>
 
+
+            <!-- Start of 1st fieldset -->
             <fieldset class="product-form">
                 <legend>Select a product</legend>
 
+                <!-- PRODUCT -->
                 <div class="order-form">
                     <label>
                         <p>Product </p>
                         <select class="products">
                             <option selected> Products from GPS-ware</option>
+                            <option value="">GoMap 1.0 ($19,95)</option>
+                            <option value="">Drive Planner 2.0 ($29.95)</option>
+                            <option value="">Hiker 1.0 ($29.95)</option>
+                            <option value="">G-Receiver I ($149.50)</option>
+                            <option value="">G-Receiver II ($199.50)</option>
+                            <option value="">G-Receiver III ($249.50)</option>
                         </select>
     
                         <select class="qty">
                             <option selected disabled>Quantity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
                         </select>
                     </label>
                     <input type="text" placeholder="0.00" id="sub1">
                 </div>
 
+
+                <!-- TAX -->
                 <div class="order-form">
                     <p>Tax 5%</p>
-                    <input type="text" name="sub2" id="sub2">
+                    <input type="text" name="sub2" id="sub2" placeholder="0.00">
                 </div>
 
+
+                <!-- SHIPPING -->
                 <div class="order-form">
                     <p>Shipping:</p>
                     <div class="shipping">
@@ -53,10 +86,50 @@
                     <input type="text" placeholder="0.00" name="sub3" id="sub3">
 
                 </div>
+
+                <!-- TOTAL -->
                 <footer>
-                    <div class="blank"> </div>
                     <label>TOTAL <input type="text" placeholder="0.00"></label>
                 </footer>
+            </fieldset>
+
+
+
+            <!-- Start of second fieldset -->
+            <fieldset class="product-form">
+                <legend>Shipping address</legend>
+
+
+                <!-- NAME -->
+                <div class="order-form">
+                    <label for="name">Name: <input type="text" name="name"></label>
+                </div>
+
+                <!-- STREET -->
+                <div class="order-form">
+                    <label for="Street">Street: <input type="text" name="street"></label>
+                </div>
+
+                <!-- CITY -->
+                <div class="order-form">
+                    <label for="city">City: <input type="text"></label>
+                    <label for="state">
+                        <p>State: </p> 
+                        <select name="state">
+                            <option value="">AL</option>
+                            <option value="">AK</option>
+                            <option value="">AZ</option>
+                            <option value="">AR</option>
+                            <option value="">CA</option>
+                            <option value="">CO</option>
+                            <option value="">CT</option>
+                            <option value="">DE</option>
+                            <option value="">DC</option>
+                            <option value="">FL</option>
+                        </select>
+
+                    </label>
+                </div>
             </fieldset>
         </form>
         

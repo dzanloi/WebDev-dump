@@ -137,8 +137,8 @@
             <fieldset class="product-form">
                 <legend>Billing Address</legend>
 
-                <label id="labels"><input type="checkbox" > Shipping Address</label>
-                <label id="labels"><input type="checkbox"> Bill me now with my credit card.</label>
+                <label><input type="checkbox" > Shipping Address</label>
+                <label><input type="checkbox"> Bill me now with my credit card.</label>
 
                 <!-- NAME -->
                 <div class="order-form">
@@ -169,7 +169,7 @@
                         </select>
                     </label>
 
-                    <label for="zip">ZIP: <input type="text" name="zip" id="zip"></label>
+                    <label id="labels">ZIP: <input type="text" name="zip"></label>
                 </div>
             </fieldset>
 
@@ -183,6 +183,8 @@
                     <label for="name" id="labels">Name: <input type="text" name="name"></label>
                 </div>
 
+
+                <!-- CARDS -->
                 <div class="last">
                     <div class="label">
                         <p id="labels">Card:</p>
@@ -203,7 +205,48 @@
                         <label><input type="radio" name="cards"> Visa</label>
                     </div>
                 </div>
+
+
+                <!-- NUMBER -->
+                <div class="order-form">
+                    <label id="labels">Number: <input type="text"></label>
+                    
+                    <div class="expiration">
+                        <p id="labels">Expiration:</p>
+                        <label id="expiration-end">
+                            <select>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            /
+                            <select>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
             </fieldset>
+
+            <div class="buttons">
+                <button>Submit Order</button>
+                <button>Cancel Order</button>
+            </div>
         </form>
         
         <script src="script.js" async defer></script>

@@ -41,6 +41,7 @@ header span {
     justify-content: space-between;
 }
 .order-form input[type="date"] {
+    background-color: bisque;
     height: 75%;
     margin-top: auto;
     margin-bottom: auto;

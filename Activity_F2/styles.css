@@ -38,6 +38,7 @@ header span {
     padding-top: 10px;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .order-form input[type="date"] {
@@ -84,9 +85,24 @@ footer label {
     display: block;
 }
 
-#city {
-    
+.expiration {
+    display: flex;
+    margin-left: 40px;
 }
+
+#sub3 {
+    height: auto;
+    margin-bottom: auto;
+}
+#city {
+    margin-left: 13px;
+}
+#name {
+    margin-left: 13px;
+}
+
+
+
 
 .buttons {
     display: flex;
@@ -99,7 +115,13 @@ footer label {
     border: 1.5px solid rebeccapurple;
     border-radius: 10px;
 }
-.expiration {
-    display: flex;
-    margin-left: 40px;
+#submit {
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+#submit :hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in;
 }

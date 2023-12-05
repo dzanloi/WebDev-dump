@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
     <head>
@@ -79,16 +79,16 @@
                 <div class="order-form">
                     <p id="labels">Shipping:</p>
                     <div class="shipping">
-                        <label><input type="radio" name="shipping"> Standard (3-5 days): $7.95</label>
-                        <label><input type="radio" name="shipping"> Express (2 days): $9.95</label>
-                        <label><input type="radio" name="shipping"> Next Day (1 day): $12.95</label>
+                        <label><input type="radio" name="shipping" value="7.95" onclick="shownum(this.value)"> Standard (3-5 days): $7.95</label>
+                        <label><input type="radio" name="shipping" value="9.95" onclick="shownum(this.value)"> Express (2 days): $9.95</label>
+                        <label><input type="radio" name="shipping" value="12.95" onclick="shownum(this.value)"> Next Day (1 day): $12.95</label>
                     </div>
                     <input type="text" placeholder="0.00" name="sub3" id="sub3" disabled>
                 </div>
 
                 <!-- TOTAL -->
                 <footer>
-                    <label>TOTAL <input type="text" placeholder="0.00" disabled></label>
+                    <label>TOTAL <input type="text" placeholder="0.00" id="total" disabled></label>
                 </footer>
             </fieldset>
 
@@ -101,12 +101,12 @@
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" size="38" ="name"></label>
+                    <label for="name" id="labels">Name: <input type="text" size="38" id="for_bord_rad"></label>
                 </div>
 
                 <!-- STREET -->
                 <div class="order-form">
-                    <label for="Street" id="labels">Street: <textarea name="street" id="" cols="40" rows="3"></textarea></label>
+                    <label for="Street" id="labels">Street: <textarea name="street" id="for_bord_rad" cols="40" rows="3"></textarea></label>
                 </div>
 
                 <!-- CITY -->
@@ -143,12 +143,12 @@
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" name="name" size="38"></label>
+                    <label for="name" id="labels">Name: <input type="text" name="name" size="38" id="for_bord_rad"></label>
                 </div>
 
                 <!-- STREET -->
                 <div class="order-form">
-                    <label for="Street" id="labels">Street: <textarea name="street" id="" cols="40" rows="3"></textarea></label>
+                    <label for="Street" id="labels">Street: <textarea name="street" id="for_bord_rad" cols="40" rows="3"></textarea></label>
                 </div>
 
                 <!-- CITY -->
@@ -170,7 +170,7 @@
                         </select>
                     </label>
 
-                    <label id="labels">ZIP: <input type="text" name="zip"></label>
+                    <label id="labels">ZIP: <input type="text" name="zip" id="for_bord_rad"></label>
                 </div>
             </fieldset>
 
@@ -211,7 +211,7 @@
 
                 <!-- NUMBER -->
                 <div class="order-form">
-                    <label id="labels">Number: <input type="text" size="36"></label>
+                    <label id="labels">Number: <input type="text" size="36" id="for_bord_rad"></label>
                     
                     <div class="expiration">
                         <p id="labels">Expiration:</p>
@@ -230,7 +230,7 @@
                                 <option value="11">11</option>
                                 <option value="12">12</option>
                             </select>
-                            /
+                            <p>/</p>
                             <select>
                                 <option value="2004">2004</option>
                                 <option value="2005">2005</option>

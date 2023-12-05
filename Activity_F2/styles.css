@@ -6,7 +6,6 @@
     font-family: 'Red Hat Display', sans-serif;
     background-color: whitesmoke;
 }
-
 body {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -89,17 +88,11 @@ footer label {
     display: flex;
     margin-left: 40px;
 }
+#city, #name {
+    margin-left: 13px;
+    border-radius: 8px;
+}
 
-#sub3 {
-    height: auto;
-    margin-bottom: auto;
-}
-#city {
-    margin-left: 13px;
-}
-#name {
-    margin-left: 13px;
-}
 
 
 
@@ -136,4 +129,23 @@ footer label {
     background-color: #EE4d2d;
     color: white;
     transition: 0.2s ease-in-out;
+}
+
+#sub3 {
+    height: auto;
+    margin-bottom: auto;
+}
+#sub1, #sub2, #sub3, #total {
+    background-color: bisque;
+    border-radius: 8px;
+}
+
+#expiration-end p {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#for_bord_rad, #zip {
+    border-radius: 8px;
 }

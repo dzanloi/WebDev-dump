@@ -119,9 +119,21 @@ footer label {
     padding: 10px;
     background-color: white;
     color: black;
+    cursor: pointer;
 }
-#submit :hover{
-    background-color: black;
+#submit:hover{
+    background-color: #EE4d2d;
     color: white;
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in-out;
+}
+#cancel {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#cancel:hover{
+    background-color: #EE4d2d;
+    color: white;
+    transition: 0.2s ease-in-out;
 }

@@ -84,10 +84,10 @@ footer label {
     display: block;
 }
 
-
-.label{
-    margin-right: 35px;
+#city {
+    
 }
+
 .buttons {
     display: flex;
     justify-content: center;

@@ -9,3 +9,7 @@ function shownum(value) {
     total = sub1_input.value + sub2_input.value + sub3_input.value;
     total_input.value = total;
 }
+
+function onClick() {
+    
+}

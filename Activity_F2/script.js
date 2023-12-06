@@ -11,5 +11,5 @@ function shownum(value) {
 }
 
 function onClick() {
-    
+    alert(`Ayaw kol, bata pako kolllllll`);
 }

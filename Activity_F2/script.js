@@ -10,6 +10,6 @@ function shownum(value) {
     total_input.value = total;
 }
 
-function onClick() {
+function clickeed() {
     alert(`Ayaw kol, bata pako kolllllll`);
 }

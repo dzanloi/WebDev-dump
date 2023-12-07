@@ -30,3 +30,8 @@ function getTotal() {
     var total = prices[product] * quantity;
     document.getElementById('sub1').value = total.value;
 }
+
+function cancel() {
+    let body = document.querySelectorAll;
+    body.value = 0;
+}

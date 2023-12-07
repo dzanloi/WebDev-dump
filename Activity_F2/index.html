@@ -40,17 +40,17 @@
                 <div class="order-form">
                     <label>
                         <p id="labels">Product </p>
-                        <select class="products">
+                        <select class="products" onchange="getTotal()">
                             <option selected> Products from GPS-ware</option>
-                            <option value="">GoMap 1.0 ($19,95)</option>
-                            <option value="">Drive Planner 2.0 ($29.95)</option>
-                            <option value="">Hiker 1.0 ($29.95)</option>
-                            <option value="">G-Receiver I ($149.50)</option>
-                            <option value="">G-Receiver II ($199.50)</option>
-                            <option value="">G-Receiver III ($249.50)</option>
+                            <option value="19.95">GoMap 1.0 ($19.95)</option>
+                            <option value="29.95">Drive Planner 2.0 ($29.95)</option>
+                            <option value="29.95">Hiker 1.0 ($29.95)</option>
+                            <option value="149.50">G-Receiver I ($149.50)</option>
+                            <option value="199.50">G-Receiver II ($199.50)</option>
+                            <option value="249.50">G-Receiver III ($249.50)</option>
                         </select>
     
-                        <select class="qty">
+                        <select class="qty" onchange="getTotal()">
                             <option selected disabled>Quantity</option>
                             <option value="1">1</option>
                             <option value="2">2</option>

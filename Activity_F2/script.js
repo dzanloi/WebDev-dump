@@ -13,3 +13,20 @@ function shownum(value) {
 function clickeed() {
     alert(`Ayaw kol, bata pako kolllllll`);
 }
+
+function getTotal() {
+    var product = document.querySelector(`.products`).value;
+    var quantity = document.querySelector(`.qty`).value;
+
+    var prices = {
+        'GoMap 1.0': 19.95,
+        'Drive Planner 2.0': 29.95,
+        'Hiker 1.0': 29.95,
+        'G-Receiver I': 149.50,
+        'G-Receiver II': 199.50,
+        'G-Receiver III': 249.50
+    };
+
+    var total = prices[product] * quantity;
+    document.getElementById('sub1').value = total.toFixed(2);
+}

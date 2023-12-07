@@ -28,5 +28,5 @@ function getTotal() {
     };
 
     var total = prices[product] * quantity;
-    document.getElementById('sub1').value = total.toFixed(2);
+    document.getElementById('sub1').value = total.value;
 }

@@ -35,3 +35,7 @@ function cancel() {
     let body = document.querySelectorAll;
     body.value = 0;
 }
+
+function sabmit() {
+    alert(`Form Successfully submitted`);
+}

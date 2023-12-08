@@ -31,7 +31,7 @@
                 <label id="labels"><p>Date:</p> <input type="date" name="formdate"></label>
             </div>
 
-
+            
             <!-- Start of 1st fieldset -->
             <fieldset class="product-form">
                 <legend>Select a product</legend>
@@ -40,7 +40,7 @@
                 <div class="order-form">
                     <label>
                         <p id="labels">Product </p>
-                        <select class="products" onchange="getTotal()">
+                        <select class="products" onchange="getTotal(this.value)">
                             <option selected> Products from GPS-ware</option>
                             <option value="19.95">GoMap 1.0 ($19.95)</option>
                             <option value="29.95">Drive Planner 2.0 ($29.95)</option>
@@ -50,7 +50,7 @@
                             <option value="249.50">G-Receiver III ($249.50)</option>
                         </select>
     
-                        <select class="qty" onchange="getTotal()">
+                        <select class="qty" onchange="getTotal(this.value)">
                             <option selected disabled>Quantity</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -115,16 +115,16 @@
                     <label for="state">
                         <p id="labels">State: </p> 
                         <select name="state">
-                            <option value="">AL</option>
-                            <option value="">AK</option>
-                            <option value="">AZ</option>
-                            <option value="">AR</option>
-                            <option value="">CA</option>
-                            <option value="">CO</option>
-                            <option value="">CT</option>
-                            <option value="">DE</option>
-                            <option value="">DC</option>
-                            <option value="">FL</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
                         </select>
                     </label>
 
@@ -157,16 +157,16 @@
                     <label for="state">
                         <p id="labels">State: </p> 
                         <select name="state">
-                            <option value="">AL</option>
-                            <option value="">AK</option>
-                            <option value="">AZ</option>
-                            <option value="">AR</option>
-                            <option value="">CA</option>
-                            <option value="">CO</option>
-                            <option value="">CT</option>
-                            <option value="">DE</option>
-                            <option value="">DC</option>
-                            <option value="">FL</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
                         </select>
                     </label>
 

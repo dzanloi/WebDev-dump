@@ -14,7 +14,7 @@ function clickeed() {
     alert(`Ayaw kol, bata pako kolllllll`);
 }
 
-function getTotal() {
+function getTotal(value) {
     var product = document.querySelector(`.products`).value;
     var quantity = document.querySelector(`.qty`).value;
 

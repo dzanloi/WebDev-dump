@@ -18,6 +18,7 @@ function getTotal(value) {
     var product = document.querySelector(`.products`).value;
     var quantity = document.querySelector(`.qty`).value;
 
+    // how tf should i do this
     var prices = {
         'GoMap 1.0': 19.95,
         'Drive Planner 2.0': 29.95,

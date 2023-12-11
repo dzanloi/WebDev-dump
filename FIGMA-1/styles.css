@@ -6,14 +6,14 @@
 }
 
 body {
-    margin: 10px;
     background-color: #BBC1CA;
-}
-.landing-page img {
+    background-image: url("background.png");
     background-size: cover;
-    width: auto;
+    background-repeat: no-repeat;
 }
+
 header {
+    padding: 15px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -25,7 +25,9 @@ header {
 }
 
 .navigation-bar {
-    width: 25%;
+    background-color: transparent;
+    position: static;
+    width: 35%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -39,8 +41,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     color: #4D525F;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 25px auto 25px;
     font-size: 22px;
 }
 
@@ -54,4 +55,128 @@ header {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+
+/* starting here is the css code for the main */
+.heading {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    right: 0;
+}
+.heading h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+.heading h1, p{
+    display: block;
+    color: #4D525F;
+}
+.heading p {
+    font-weight: 600;
+    padding: 10px;
+    font-size: 32px;
+}
+
+
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    justify-content: center;
+    width: 50%;
+}
+.black-button, .white-button {
+    cursor: pointer;
+    font-size: 32px;
+    padding: 6px 30px 6px 30px;
+    border-radius: 35px;
+}
+.black-button {
+    margin-right: 15px;
+    background-color: #4D525F;
+    border: 1px solid #4D525F;
+    color: #BBC1CA;
+    box-shadow: -2px 8px #2F2F2F;
+}.black-button:hover {
+    transform: translate(-2px, 8px);
+    box-shadow: 0 0;
+    transition: 0.2s ease-in;
+}
+.white-button {
+    margin-left: 15px;
+    background-color: #BBC1CA;
+    border: 1px solid #BBC1CA;
+    color: #4D525F;
+    box-shadow: -2px 8px #636363;
+}.white-button:hover {
+    transform: translate(-2px, 8px);
+    box-shadow: 0 0;
+    transition: 0.2s ease-in;
+}
+
+
+/* CONTENT AREA */
+.content {
+    width: 100%;
+    position: absolute;
+    top: 107%;
+    bottom: 0;
+}
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(77, 82, 95, 0.03);
+    border-radius: 15px;
+    background-color: rgba(77,  82, 95, 0.3);
+    width: 75%;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.boxes {
+    width: 35%;
+    margin-right: 10px;
+    margin-left: 10px;
+}.boxes h3{
+    color: #4D525F;
+    text-align: center;
+    font-size: 32px;
+}.boxes p {
+    font-size: 24px;
+}.boxes img {
+    display: inline-block;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #4D525F;
+}
+
+
+.featured-prducts {
+    display: flex;
+}
+.sofa {
+    position: absolute;
+    right: 0;
+    margin-right: 12%;
+}
+.box2 {
+    border: 1px solid rgba(77, 82, 95, 0.03);
+    border-radius: 15px;
+    background-color: rgba(77,  82, 95, 0.3);
+    width: 25%;
+    padding: 30px 30px 30px 5%;
+    margin-left: 12%;
+    margin-bottom: 20px;
+}
+.box2 p {
+    width: 50%;
+    font-size: 24px;
 }

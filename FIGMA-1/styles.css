@@ -171,22 +171,21 @@ header {
     display: flex;
     justify-content: space-evenly;
 }
-.sofa {
+#sofa {
     position: absolute;
     right: 0;
     margin-right: 12%;
 }
 .box2 {
-    display: flex;
     border: 1px solid rgba(77, 82, 95, 0.03);
     border-radius: 15px;
     background-color: rgba(77,  82, 95, 0.3);
-    width: 35%;
+    width: 75%;
     padding: 30px 30px 30px 5%;
     margin-left: 12%;
     margin-bottom: 20px;
 }
 .box2 p {
-    width: 50%;
+    width: 35%;
     font-size: 24px;
 }

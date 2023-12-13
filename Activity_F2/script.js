@@ -18,7 +18,7 @@ function getTotal() {
     s1 = eval(document.order.sub1.value);
     s2 = eval(document.order.sub2.value);
     s3 = eval(document.order.sub3.value);
-    document.order.total.value=(s1+s2+s3).toFixed(2);
+    document.order.total.value=(s1 + s2 + s3).toFixed(2);
 }
 
 function order_price(){

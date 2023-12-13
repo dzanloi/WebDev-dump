@@ -63,9 +63,11 @@ legend {
     align-items: center;
     justify-content: space-between;
 }
-.order-form input[type="date"] {
-    background-color: bisque;
-    height: 75%;
+#date {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+    height: 30px;
     margin-top: auto;
     margin-bottom: auto;
 }

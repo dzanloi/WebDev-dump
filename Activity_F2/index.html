@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="script.js" async defer></script>
+
         <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
     </head>
 
@@ -19,7 +21,7 @@
 
 
     <!-- BODY STARTS HERE -->
-    <body>
+    <body onload="startForm()">
         <form name="order">
             <header>
                 <h1><span onclick="clickeed()">Shopee</span> Form</h1>
@@ -28,7 +30,7 @@
 
             <div class="order-form">
                 <h2>Order Form</h2>
-                <label id="labels"><p>Date:</p> <input type="date" name="formdate"></label>
+                <label id="labels"><p>Date:</p> <input type="text" id="date" name="formdate" disabled></label>
             </div>
 
             
@@ -40,7 +42,7 @@
                 <div class="order-form">
                     <label>
                         <p id="labels">Product </p>
-                        <select class="products" name="product" onchange="getTotal(this.value)">
+                        <select class="products" name="product" onchange="order_price()">
                             <option selected> Products from GPS-ware</option>
                             <option value="19.95">GoMap 1.0 ($19.95)</option>
                             <option value="29.95">Drive Planner 2.0 ($29.95)</option>
@@ -50,8 +52,8 @@
                             <option value="249.50">G-Receiver III ($249.50)</option>
                         </select>
     
-                        <select class="qty" name="qty" onchange="getTotal(this.value)">
-                            <option selected disabled>Quantity</option>
+                        <select class="qty" name="qty" onchange="order_price()">
+                            <option selected disabled value="0">Quantity</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -79,16 +81,16 @@
                 <div class="order-form">
                     <p id="labels">Shipping:</p>
                     <div class="shipping">
-                        <label><input type="radio" name="shipping" value="7.95" onclick="shownum(this.value)"> Standard (3-5 days): $7.95</label>
-                        <label><input type="radio" name="shipping" value="9.95" onclick="shownum(this.value)"> Express (2 days): $9.95</label>
-                        <label><input type="radio" name="shipping" value="12.95" onclick="shownum(this.value)"> Next Day (1 day): $12.95</label>
+                        <label><input type="radio" name="shipping" value="7.95" onclick="getShipping(this.value)"> Standard (3-5 days): $7.95</label>
+                        <label><input type="radio" name="shipping" value="9.95" onclick="getShipping(this.value)"> Express (2 days): $9.95</label>
+                        <label><input type="radio" name="shipping" value="12.95" onclick="getShipping(this.value)"> Next Day (1 day): $12.95</label>
                     </div>
                     <input type="text" placeholder="0.00" name="sub3" id="sub3" disabled>
                 </div>
 
                 <!-- TOTAL -->
                 <footer>
-                    <label>TOTAL <input type="text" placeholder="0.00" id="total" name="total" disabled></label>
+                    <label>TOTAL <input onchange="getTotal()" placeholder="0.00" id="total" name="total" onchange="getTotal()" disabled></label>
                 </footer>
             </fieldset>
 
@@ -251,6 +253,5 @@
             </div>
         </form>
         
-        <script src="script.js" async defer></script>
     </body>
 </html>

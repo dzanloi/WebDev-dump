@@ -1,35 +1,38 @@
-function shownum(value) {
-    let total_input = document.getElementById(`total`);
-    let sub1_input = document.getElementById(`sub1`);
-    let sub2_input = document.getElementById(`sub2`);
-    let sub3_input = document.getElementById(`sub3`);
-    sub3_input.value = value;
+let sub1_input = document.getElementById(`sub1`);
+let sub2_input = document.getElementById(`sub2`);
+let sub3_input = document.getElementById(`sub3`);
+let total_input = document.getElementById(`total`);
+let total = 0;
 
-    let total = 0;
-    total = sub1_input.value + sub2_input.value + sub3_input.value;
-    total_input.value = total;
+function startForm() {
+    let Today = new Date();
+    document.order.formdate.value = Today.getMonth() + 1 + "/" + Today.getDate() + "/" + Today.getFullYear();
 }
+
+function getShipping(value) {
+    sub3_input.value = value;
+    getTotal();
+}
+
+function getTotal() {
+    s1 = eval(document.order.sub1.value);
+    s2 = eval(document.order.sub2.value);
+    s3 = eval(document.order.sub3.value);
+    document.order.total.value=(s1+s2+s3).toFixed(2);
+}
+
+function order_price(){
+    item_index = document.order.product.selectedIndex;
+    item_value = document.order.product.options[item_index].value;
+    qty_ordered = document.order.qty.selectedIndex;
+    document.order.sub1.value = item_value*qty_ordered.toFixed(2);
+    document.order.sub2.value = (item_value*qty_ordered*0.05).toFixed(2);
+    getTotal();
+}
+
 
 function clickeed() {
     alert(`Ayaw kol, bata pako kolllllll`);
-}
-
-function getTotal(value) {
-    var product = document.querySelector(`.products`).value;
-    var quantity = document.querySelector(`.qty`).value;
-
-    // how tf should i do this
-    var prices = {
-        'GoMap 1.0': 19.95,
-        'Drive Planner 2.0': 29.95,
-        'Hiker 1.0': 29.95,
-        'G-Receiver I': 149.50,
-        'G-Receiver II': 199.50,
-        'G-Receiver III': 249.50
-    };
-
-    var total = prices[product] * quantity;
-    document.getElementById('sub1').value = total.value;
 }
 
 function cancel() {
@@ -40,3 +43,4 @@ function cancel() {
 function sabmit() {
     alert(`Form Successfully submitted`);
 }
+

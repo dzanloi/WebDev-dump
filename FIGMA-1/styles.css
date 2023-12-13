@@ -167,10 +167,12 @@ header {
 }
 
 
-.featured-prducts {
+.featured-products {
+    padding: 35px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
+
 #sofa {
     position: absolute;
     right: 0;
@@ -182,7 +184,6 @@ header {
     background-color: rgba(77,  82, 95, 0.3);
     width: 75%;
     padding: 30px 30px 30px 5%;
-    margin-left: 12%;
     margin-bottom: 20px;
 }
 .box2 p {

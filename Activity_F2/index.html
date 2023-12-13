@@ -40,7 +40,7 @@
                 <div class="order-form">
                     <label>
                         <p id="labels">Product </p>
-                        <select class="products" onchange="getTotal(this.value)">
+                        <select class="products" name="product" onchange="getTotal(this.value)">
                             <option selected> Products from GPS-ware</option>
                             <option value="19.95">GoMap 1.0 ($19.95)</option>
                             <option value="29.95">Drive Planner 2.0 ($29.95)</option>
@@ -50,7 +50,7 @@
                             <option value="249.50">G-Receiver III ($249.50)</option>
                         </select>
     
-                        <select class="qty" onchange="getTotal(this.value)">
+                        <select class="qty" name="qty" onchange="getTotal(this.value)">
                             <option selected disabled>Quantity</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -64,7 +64,7 @@
                             <option value="10">10</option>
                         </select>
                     </label>
-                    <input type="text" placeholder="0.00" id="sub1" disabled>
+                    <input type="text" placeholder="0.00" id="sub1" name="sub1" disabled>
                 </div>
 
 
@@ -88,7 +88,7 @@
 
                 <!-- TOTAL -->
                 <footer>
-                    <label>TOTAL <input type="text" placeholder="0.00" id="total" disabled></label>
+                    <label>TOTAL <input type="text" placeholder="0.00" id="total" name="total" disabled></label>
                 </footer>
             </fieldset>
 
@@ -101,20 +101,20 @@
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" size="38" id="for_bord_rad"></label>
+                    <label for="name" id="labels">Name: <input type="text" name="sname" size="38" id="for_bord_rad"></label>
                 </div>
 
                 <!-- STREET -->
                 <div class="order-form">
-                    <label for="Street" id="labels">Street: <textarea name="street" id="for_bord_rad" cols="40" rows="3"></textarea></label>
+                    <label for="Street" id="labels">Street: <textarea name="sstreet" id="for_bord_rad" cols="40" rows="3"></textarea></label>
                 </div>
 
                 <!-- CITY -->
                 <div class="order-form">
-                    <label for="city" id="labels">City: <input type="text" id="city" size="38"></label>
+                    <label for="city" id="labels">City: <input type="text" name="scity" id="city" size="38"></label>
                     <label for="state">
                         <p id="labels">State: </p> 
-                        <select name="state">
+                        <select name="sstate">
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
                             <option value="AZ">AZ</option>
@@ -128,7 +128,7 @@
                         </select>
                     </label>
 
-                    <label for="zip" id="labels">ZIP: <input type="text" name="zip" id="zip"></label>
+                    <label for="zip" id="labels">ZIP: <input type="text" name="szip" id="zip"></label>
                 </div>
             </fieldset>
 
@@ -138,25 +138,25 @@
             <fieldset class="product-form">
                 <legend>Billing Address</legend>
 
-                <label><input type="checkbox" > Shipping Address</label>
-                <label><input type="checkbox"> Bill me now with my credit card.</label>
+                <label><input type="checkbox" name="billcb"> Same as shipping Address</label>
+                <label><input type="checkbox" name="creditcb"> Bill me now with my credit card.</label>
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" name="name" size="38" id="for_bord_rad"></label>
+                    <label for="name" id="labels">Name: <input type="text" name="bname" size="38" id="for_bord_rad"></label>
                 </div>
 
                 <!-- STREET -->
                 <div class="order-form">
-                    <label for="Street" id="labels">Street: <textarea name="street" id="for_bord_rad" cols="40" rows="3"></textarea></label>
+                    <label for="Street" id="labels">Street: <textarea name="bstreet" id="for_bord_rad" cols="40" rows="3"></textarea></label>
                 </div>
 
                 <!-- CITY -->
                 <div class="order-form">
-                    <label for="city" id="labels">City: <input type="text" size="38" id="city"></label>
+                    <label for="city" id="labels">City: <input type="text" name="bcity" size="38" id="city"></label>
                     <label for="state">
                         <p id="labels">State: </p> 
-                        <select name="state">
+                        <select name="bstate">
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
                             <option value="AZ">AZ</option>
@@ -170,7 +170,7 @@
                         </select>
                     </label>
 
-                    <label id="labels">ZIP: <input type="text" name="zip" id="for_bord_rad"></label>
+                    <label id="labels">ZIP: <input type="text" name="bzip" id="for_bord_rad"></label>
                 </div>
             </fieldset>
 
@@ -182,7 +182,7 @@
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" name="name" size="36" id="name"></label>
+                    <label for="name" id="labels">Name: <input type="text" name="cname" size="36" id="name"></label>
                 </div>
 
 
@@ -193,30 +193,30 @@
                     </div>
 
                     <div class="cards">
-                        <label><input type="radio" name="cards"> American Express</label>
-                        <label><input type="radio" name="cards"> CitiBank</label>
+                        <label><input type="radio" name="ccard"> American Express</label>
+                        <label><input type="radio" name="ccard"> CitiBank</label>
                     </div>
                     
                     <div class="cards">
-                        <label><input type="radio" name="cards"> Diner's Club</label>
-                        <label><input type="radio" name="cards"> Discover</label>
+                        <label><input type="radio" name="ccard"> Diner's Club</label>
+                        <label><input type="radio" name="ccard"> Discover</label>
                     </div>
                     
                     <div class="cards">
-                        <label><input type="radio" name="cards"> MasterCard</label>
-                        <label><input type="radio" name="cards"> Visa</label>
+                        <label><input type="radio" name="ccard"> MasterCard</label>
+                        <label><input type="radio" name="ccard"> Visa</label>
                     </div>
                 </div>
 
 
                 <!-- NUMBER -->
                 <div class="order-form">
-                    <label id="labels">Number: <input type="text" size="36" id="for_bord_rad"></label>
+                    <label id="labels">Number: <input type="text" name="cnumber" size="36" id="for_bord_rad"></label>
                     
                     <div class="expiration">
                         <p id="labels">Expiration:</p>
                         <label id="expiration-end">
-                            <select>
+                            <select name="expmonth">
                                 <option value="01">01</option>
                                 <option value="02">02</option>
                                 <option value="03">03</option>
@@ -231,7 +231,7 @@
                                 <option value="12">12</option>
                             </select>
                             <p>/</p>
-                            <select>
+                            <select name="expyear">
                                 <option value="2004">2004</option>
                                 <option value="2005">2005</option>
                                 <option value="2006">2006</option>

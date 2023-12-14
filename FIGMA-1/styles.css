@@ -205,7 +205,25 @@ header {
 
 
 /* FOOTER */
-
 .last {
+    padding: 15px;
+    background-color: #4D525F;
+}
+.details {
     display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 50%;
+    margin: 25px;
+}
+.details-texts p {
+    color: #BBC1CA;
+
+}
+.details-texts h2 {
+    color: white;
+    margin-bottom: 35px;
+}
+.details-texts {
+    width: 30%;
 }

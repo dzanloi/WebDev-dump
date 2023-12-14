@@ -218,6 +218,7 @@ header {
     margin: 25px 25px 25px 70px;
 }
 .details-texts p {
+    cursor: pointer;
     margin-left: 20px;
     color: #BBC1CA;
     font-size: 16px;
@@ -225,7 +226,12 @@ header {
     line-height: 250%;
     font-weight: 600;
 }
+.details-texts p:hover {
+    color: white;
+    transition: 0.2s ease-in;
+}
 .details-texts h2 {
+    cursor: default;
     color: white;
     margin-bottom: 35px;
 }

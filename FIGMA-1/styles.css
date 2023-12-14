@@ -202,3 +202,10 @@ header {
     margin-left: 15%;
     margin-bottom: 15px;
 }
+
+
+/* FOOTER */
+
+.last {
+    display: flex;
+}

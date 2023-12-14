@@ -212,18 +212,23 @@ header {
 .details {
     display: flex;
     justify-content: space-between;
+    align-items:flex-start;
     width: 50%;
     max-width: 50%;
-    margin: 25px;
+    margin: 25px 25px 25px 70px;
 }
 .details-texts p {
+    margin-left: 20px;
     color: #BBC1CA;
-
+    font-size: 16px;
+    font-style: normal;
+    line-height: 250%;
+    font-weight: 600;
 }
 .details-texts h2 {
     color: white;
     margin-bottom: 35px;
 }
 .details-texts {
-    width: 30%;
+    width: 32%;
 }

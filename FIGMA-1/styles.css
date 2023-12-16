@@ -204,9 +204,25 @@ header {
 
 
 
-.biggest-furniture {
+.bf-section {
     display: flex;
+    margin: 5%;
 }
+.biggest-furniture h1{
+    color: #4D525F;
+    text-align: center;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.biggest-furniture p {
+    color: #4D525F;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+}
+
 
 
 /* FOOTER */

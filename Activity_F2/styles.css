@@ -11,7 +11,7 @@ body {
     margin-bottom: 20px;
     margin-left: 25%;
     margin-right: 25%;
-    background-color: bisque ;
+    background-image: url("background.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -45,8 +45,9 @@ legend {
     font-size: 1.2em;
     font-weight: bold;
 }form {
+    filter: drop-shadow(5px 4px 15px grey);
     margin: 50px auto 50px auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
     border: 2px solid #EE4d2d;
     padding: 20px;
     border-radius: 10px;

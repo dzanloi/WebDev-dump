@@ -11,7 +11,7 @@ body {
     margin-bottom: 20px;
     margin-left: 25%;
     margin-right: 25%;
-    background-image: url("bcakgoud.jpg") ;
+    background-color: bisque ;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -46,7 +46,7 @@ legend {
     font-weight: bold;
 }form {
     margin: 50px auto 50px auto;
-    background-color: transparent;
+    background-color: white;
     border: 2px solid #EE4d2d;
     padding: 20px;
     border-radius: 10px;

@@ -20,6 +20,7 @@ body {
     color: #a21b00;
 }
 header h1{
+    filter: drop-shadow(3px 3px 3px grey);
     font-size: 70px;
 }
 header span {
@@ -48,19 +49,20 @@ legend {
     filter: drop-shadow(5px 4px 15px grey);
     margin: 50px auto 50px auto;
     background-color: rgba(255, 255, 255, 0.3);
-    border: 2px solid #EE4d2d;
+    /* border: 2px solid #EE4d2d; */
     padding: 20px;
     border-radius: 10px;
 }fieldset {
-    border: 2px solid #ccc;
+    border: 2px solid #4d4d4d;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
+    filter: drop-shadow(3px 3px 3px grey);
 }hr {
     margin-top: 20px;
     margin-bottom: 30px;
     border: none;
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #4d4d4d;
 }
 .order-form {
     padding-top: 10px;
@@ -76,8 +78,10 @@ legend {
     height: 30px;
     margin-top: auto;
     margin-bottom: auto;
+    filter: drop-shadow(3px 3px 3px grey);
 }
 .order-form h2 {
+    filter: drop-shadow(3px 3px 3px grey);
     font-size: 30px;
     font-weight: bold;
 }
@@ -136,12 +140,14 @@ footer label {
     margin: 10px;
 }
 .buttons button {
+    filter: drop-shadow(3px 3px 3px grey);
     margin-right: 30px;
     padding: 5px;
     border: 1.5px solid rebeccapurple;
     border-radius: 10px;
 }
 #submit {
+    border: none;
     padding: 10px;
     background-color: white;
     color: black;
@@ -153,6 +159,7 @@ footer label {
     transition: 0.2s ease-in-out;
 }
 #cancel {
+    border: none;
     padding: 10px;
     background-color: white;
     color: black;

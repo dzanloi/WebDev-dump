@@ -41,6 +41,42 @@ function cancel() {
 }
 
 function sabmit() {
-    alert(`Form Successfully submitted`);
+    var product_ok = true;
+    if (document.order.sub1.value === "0.00") product_ok = false;
+    if (document.order.sub2.value === "0.00") product_ok = false;
+    if (document.order.sub3.value === "0.00") product_ok = false;
+ 
+    var shipping_ok = true;
+    if (document.querySelector('.shipping-address .sname').value === "") shipping_ok = false;
+    if (document.querySelector('.shipping-address .sstreet').value === "") shipping_ok = false;
+    if (document.querySelector('.shipping-address .scity').value === "") shipping_ok = false;
+    if (document.querySelector('.shipping-address .szip').value === "") shipping_ok = false;
+   
+    var billing_ok = true;
+    if (document.order.bname.value === "") billing_ok = false;
+    if (document.order.bstreet.value === "") billing_ok = false;
+    if (document.order.bcity.value === "") billing_ok = false;
+    if (document.order.bzip.value === "") billing_ok = false;
+ 
+    var credit_ok = true;
+    if (document.order.cname.value === "") credit_ok = false;
+    if (document.order.cnumber.value === "") credit_ok = false;
+    var cardchecked = false;
+    for (var i = 0; i <= 5; i++) {
+        if (document.order.ccard[i].checked) cardchecked = true;
+    }
+    if (cardchecked === false) credit_ok = false;
+ 
+    var payment_ok = credit_ok || billing_ok;
+    var form_ok = product_ok && shipping_ok && billing_ok && credit_ok;
+    var form_ok_slight = product_ok && shipping_ok && payment_ok; //if creditcb is unchecked
+ 
+    if (form_ok_slight) {
+        alert("Your order has been submitted");
+    } else {
+        if (product_ok === false) alert("Select a product, quantity, and shipping method");
+        if (shipping_ok === false) alert("Enter a shipping address");
+        if (payment_ok === false) alert("Enter a billing address or credit card");
+    }
+    return form_ok_slight;
 }
-

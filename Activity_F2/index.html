@@ -22,7 +22,7 @@
 
     <!-- BODY STARTS HERE -->
     <body onload="startForm()">
-        <form name="order">
+        <form name="order" onsubmit="return sabmit()">
             <header>
                 <h1><span onclick="clickeed()">Shopee</span> Form</h1>
                 <hr>
@@ -103,7 +103,7 @@
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" name="sname" size="38" id="for_bord_rad"></label>
+                    <label for="name" id="labels">Name: <input type="text" name="sname" size="38" id="for_bord_rad" required></label>
                 </div>
 
                 <!-- STREET -->
@@ -145,7 +145,7 @@
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" name="bname" size="38" id="for_bord_rad"></label>
+                    <label for="name" id="labels">Name: <input type="text" name="bname" size="38" id="for_bord_rad" required></label>
                 </div>
 
                 <!-- STREET -->
@@ -184,7 +184,7 @@
 
                 <!-- NAME -->
                 <div class="order-form">
-                    <label for="name" id="labels">Name: <input type="text" name="cname" size="36" id="name"></label>
+                    <label for="name" id="labels">Name: <input type="text" name="cname" size="36" id="name" required></label>
                 </div>
 
 
@@ -248,8 +248,8 @@
             </fieldset>
 
             <div class="buttons">
-                <button id="submit" onclick="sabmit()">Submit Order</button>
-                <button id="cancel" onclick="cancel()">Cancel Order</button>
+                <button type="submit" id="submit" onclick="sabmit()">Submit Order</button>
+                <button type="reset" id="cancel" onclick="cancel()">Cancel Order</button>
             </div>
         </form>
         

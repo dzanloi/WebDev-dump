@@ -231,6 +231,7 @@ header {
 
 /* FOOTER */
 .last {
+    display: flex;
     padding: 15px;
     background-color: #4D525F;
 }
@@ -262,4 +263,10 @@ header {
 }
 .details-texts {
     width: 32%;
+}
+
+
+.details2 p{
+    color: #BBC1CA;
+    font-size: 24px;
 }

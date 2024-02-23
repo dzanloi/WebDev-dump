@@ -1,16 +1,57 @@
+:root {
+    --color1: rgb(255, 168, 168);
+    --color2: #f9004fd3;
+    --color3: #800000;
+}
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Jost', sans-serif;    
     box-sizing: border-box;
 }
-body {
-    background-color: rgb(255, 255, 255);
+body {  
+    /* background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white; */
+    overflow-x: hidden;
+}
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navigations {
-    
-    background-color: rgb(255, 168, 168);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    top: 2%;
+    width: 70%;
+    /* background-color: var(--color1); */
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+
+    left: 50%;     /*TIG CENTER SA NAVIGATION BAR */
+    transform: translate(-50%);
 }
 .navigations nav {
     margin: 0px 5% 5px 5%;
@@ -19,17 +60,23 @@ body {
     display: flex;
     flex-wrap: nowrap;
     max-width: 100%;
-    padding: 15px;
+    padding: 7px;
 }
-.logo {
-    color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
+.navigations img {
     cursor: pointer;
-
+    width: 7%;
+}
+.navigations h2 {
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: bolder;
+    color: var(--color3);
+}
+.navigations h2 span {
+    color: var(--color2);
 }
 .logo span {
-    color: #f9004fd3;
+    color: var(--color2);
     font-weight: bold;
 }
 nav ul li {
@@ -68,7 +115,7 @@ nav ul li a:hover:before{
 .all-btn div {
     cursor: pointer;
     color: white;
-    background-color: #f9004d;
+    background-color: var(--color2);
     border: 1px solid transparent;
     font-weight: bold;
     padding: 8px 25px;
@@ -79,22 +126,28 @@ nav ul li a:hover:before{
     color: white;
 }
 .all-btn div:hover {
-    background-color: transparent;
+    background-color: #c92682;
     backdrop-filter: blur(5px);
     transition: .4s;
-    border: 1px solid #f9004d;
+    /* border: 1px solid #f9004d; */
 }
 
 
 .landing_page {
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 50%;
     display: flex;
-    position: absolute;
-    top: 25%;
-    left: 40%;
-    right: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
 }
 .landing_page h1 {
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    top: 75%;
     font-size: 150px;
     font-weight: bolder;
     cursor:default;
@@ -104,4 +157,25 @@ nav ul li a:hover:before{
     text-align: center;
     font-size: 70px;
     word-spacing: 15px;
+}
+
+
+
+footer {
+    margin-top: 15px;
+    background-image: linear-gradient(to top, var(--color2),white);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.last {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100vh;
+    background-color: var(--color1);
+    border-radius: 50px;
+    width: 80%;
 }

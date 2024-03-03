@@ -14,7 +14,7 @@
     font-family: 'Jost', sans-serif;    
     box-sizing: border-box;
 }
-body {  
+body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--fulvous);

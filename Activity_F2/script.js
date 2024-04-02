@@ -21,7 +21,7 @@ function getTotal() {
     document.order.total.value=(s1 + s2 + s3).toFixed(2);
 }
 
-function order_price(){
+function order_price() {
     item_index = document.order.product.selectedIndex;
     item_value = document.order.product.options[item_index].value;
     qty_ordered = document.order.qty.selectedIndex;
